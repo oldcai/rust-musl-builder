@@ -166,6 +166,7 @@ ENV OPENSSL_DIR=/usr/local/musl/ \
 RUN cargo install -f cargo-audit && \
     cargo install -f cargo-deb && \
     cargo install -f mdbook-graphviz && \
+    cargo install -f sccache && \
     rm -rf /home/rust/.cargo/registry/
 
 # Expect our source code to live in /home/rust/src.  We'll run the build as
